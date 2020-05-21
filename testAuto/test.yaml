@@ -1,0 +1,9 @@
+parameters:
+  templatePath: ./test_template_v1
+  targetPath: ./test_gentarget_v1
+context:
+  templatePath: ${templatePath}
+  targetPath: ${targetPath}
+  wellcome: workbrain to Infor
+templatetarget:
+  ${templatePath}/config.yaml.vm: ${targetPath}/../intercprot.vm.yaml

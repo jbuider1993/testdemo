@@ -1,0 +1,33 @@
+#set($grouppath = $StringUtils.replace($group, ".", "/"))
+parameters:
+  templateBase: '${templatePath}'
+  exampleBase: '${targetPath}'
+templatetarget:
+  '${templateBase}/karma.conf.js': '${exampleBase}/karma.conf.js'  
+  '${templateBase}/package.json': '${exampleBase}/package.json'
+  '${templateBase}/tsconfig.json': '${exampleBase}/tsconfig.json'
+  '${templateBase}/tslint.json': '${exampleBase}/tslint.json'
+  '${templateBase}/protractor.conf.js': '${exampleBase}/tslint.json'
+
+  '${templateBase}/src/typings.d.ts': '${exampleBase}/src/typings.d.ts'
+  '${templateBase}/src/favicon.ico': '${exampleBase}/src/favicon.ico'
+  '${templateBase}/src/hmr.ts': '${exampleBase}/src/hmr.ts'
+  '${templateBase}/src/index.html': '${exampleBase}/src/index.html'
+  '${templateBase}/src/main.ts': '${exampleBase}/src/main.ts'
+  '${templateBase}/src/polyfills.ts': '${exampleBase}/src/polyfills.ts'
+  '${templateBase}/src/index.html': '${exampleBase}/src/index.html'
+  '${templateBase}/src/styles.css': '${exampleBase}/src/styles.css'
+  '${templateBase}/src/environments': '${exampleBase}/src/environments'
+  '${templateBase}/src/assets': '${exampleBase}/src/assets'
+  
+  '${templateBase}/src/app/app.component.css': '${exampleBase}/src/app/app.component.css'
+  '${templateBase}/src/app/app.component.html.vm': '${exampleBase}/src/app/app.component.html'
+  '${templateBase}/src/app/app.component.spec.ts': '${exampleBase}/src/app/app.component.spec.ts'
+  '${templateBase}/src/app/app.component.ts': '${exampleBase}/src/app/app.component.ts'
+  '${templateBase}/src/app/app.module.ts': '${exampleBase}/src/app/app.module.ts'
+
+  
+  
+  
+  
+  
